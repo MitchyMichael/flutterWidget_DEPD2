@@ -13,66 +13,96 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Mission 1"),
+        title: const Text("Mission 1"),
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        // color: Colors.red,
+        // color: Colors.green,
         child: Column(
           children: [
-            Flexible(
+
+
+            // -- FOTO AWAL --
+            Container(
               child: Container(
-                // color: Colors.amber,
-                width: double.infinity,
+                // color: Colors.blue,
                 alignment: Alignment.topCenter,
-
-                decoration: BoxDecoration(
-                  
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage("https://cf.bstatic.com/xdata/images/hotel/max1280x900/295090917.jpg?k=d17621b71b0eaa0c7a37d8d8d02d33896cef75145f61e7d96d296d88375a7d39&o=&hp=1"))
-                ),
-
-                
-                //--------- Image Corner Radius ----------------
-                // child: ClipRRect(
-                //   // borderRadius: BorderRadius.circular(25),
-                //   child:
-                //     Image(image: NetworkImage("https://cf.bstatic.com/xdata/images/hotel/max1280x900/295090917.jpg?k=d17621b71b0eaa0c7a37d8d8d02d33896cef75145f61e7d96d296d88375a7d39&o=&hp=1")),
-                // ),  
-                // ---------------------------------------------
-            
-              
+                child: const Image(
+                    image: NetworkImage(
+                        "https://i0.wp.com/www.emporioarchitect.com/upload/portofolio/1280/desain-villa-dan-rumah-modern-2-setengah-lantai-84270522-54714846270522082307-3.jpg")),
               ),
             ),
-            
-              
-            
-            
+            SizedBox(height: 15,),
+
+
+            // -- FOTO BAWAH 4 --
             Flexible(
               flex: 4,
-                // color: Colors.blue,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SizedBox(
-                      width: 150,
-                      height: 150,
-                      child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: Image(
-                            image: NetworkImage("https://media-cdn.tripadvisor.com/media/photo-s/0e/c9/50/e4/triton-luxury-villa.jpg"),
-                          ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+                  const SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: Image(
+                        image: NetworkImage("https://cf.bstatic.com/xdata/images/hotel/max1024x768/334276976.jpg?k=2a599cafc32bb045a5e733e36d2a50429dcedcb573cf43d29e479ddcb419ef00&o=&hp=1"),
+                        fit: BoxFit.cover,
+                        ),
+                      
+                    ),
+                  ),
+
+                  const SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: Image(
+                        image: NetworkImage("https://cf.bstatic.com/xdata/images/hotel/max1024x768/334276976.jpg?k=2a599cafc32bb045a5e733e36d2a50429dcedcb573cf43d29e479ddcb419ef00&o=&hp=1"),
+                        fit: BoxFit.cover,
+                        ),
+                      
+                    ),
+                  ),
+
+                  const SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: Image(
+                        image: NetworkImage("https://cf.bstatic.com/xdata/images/hotel/max1024x768/334276976.jpg?k=2a599cafc32bb045a5e733e36d2a50429dcedcb573cf43d29e479ddcb419ef00&o=&hp=1"),
+                        fit: BoxFit.cover,
+                        ),
+                      
+                    ),
+                  ),
+
+                  const SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      child: Image(
+                        image: NetworkImage("https://cf.bstatic.com/xdata/images/hotel/max1024x768/334276976.jpg?k=2a599cafc32bb045a5e733e36d2a50429dcedcb573cf43d29e479ddcb419ef00&o=&hp=1"),
+                        fit: BoxFit.cover,
                         ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
+            ),
+
+
+            // -- TULISAN --
+            SizedBox(height: 15,),
+            Text("Testing")
           ],
         ),
-        
-        
       ),
     );
   }
