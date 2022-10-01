@@ -53,8 +53,8 @@ class _homeState extends State<home> {
               // ignore: prefer_const_literals_to_create_immutables
               children: [
                 const SizedBox(
-                  width: 100,
-                  height: 100,
+                  width: 80,
+                  height: 80,
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                     child: Image(
@@ -65,8 +65,8 @@ class _homeState extends State<home> {
                   ),
                 ),
                 const SizedBox(
-                  width: 100,
-                  height: 100,
+                  width: 80,
+                  height: 80,
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                     child: Image(
@@ -77,8 +77,8 @@ class _homeState extends State<home> {
                   ),
                 ),
                 const SizedBox(
-                  width: 100,
-                  height: 100,
+                  width: 80,
+                  height: 80,
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                     child: Image(
@@ -89,8 +89,8 @@ class _homeState extends State<home> {
                   ),
                 ),
                 const SizedBox(
-                  width: 100,
-                  height: 100,
+                  width: 80,
+                  height: 80,
                   child: ClipRRect(
                     borderRadius: BorderRadius.all(Radius.circular(10)),
                     child: Image(
@@ -119,7 +119,7 @@ class _homeState extends State<home> {
           SizedBox(height: 10),
 
           Flexible(
-            flex: 10,
+            flex: 20,
             child: ListView(
               scrollDirection: Axis.vertical,
               children: [
