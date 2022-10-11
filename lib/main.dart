@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/booknow.dart';
 import 'package:flutter_widget/home.dart';
 
 void main() {
@@ -12,6 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const home(),
+      initialRoute: '/',
+      routes: {
+        Booknow.routeName:(context) => Booknow(),
+        
+      },
     );
   }
 }
