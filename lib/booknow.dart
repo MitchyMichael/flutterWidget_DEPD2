@@ -130,7 +130,7 @@ class _BooknowState extends State<Booknow> {
                                   SizedBox(height: 16),
                                   ElevatedButton(
                                       onPressed: () {
-                                        Navigator.pushReplacementNamed(context, home.routeName);
+                                        Navigator.pushNamed(context, home.routeName);
                                       },
                                       child: Text("OK"))
                                 ]),
